@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: rgb(225,174,238);
+    background: -moz-linear-gradient(120deg, rgba(225,174,238,1) 0%, rgba(208,155,237,1) 100%);
+    background: -webkit-linear-gradient(120deg, rgba(225,174,238,1) 0%, rgba(208,155,237,1) 100%);
+    background: linear-gradient(120deg, rgba(225,174,238,1) 0%, rgba(208,155,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1aeee",endColorstr="#d09bed",GradientType=1);
+
+}
+
+
+.full {
+    background-color: whitesmoke;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    border: 1px solid rgba(203, 225, 226, 1);
+    box-shadow: 1px 5px 19px 0px rgba(66, 68, 90, 1);
+}
+
+.amount, h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+form :where(input, select, button){
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+form p{
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+form input{
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 2px solid #999;
+}
+
+form input:focus {
+    border: 2px solid rgb(225,174,238);
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.from-to {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.from-to .select {
+    display: flex;
+    height: 45px;
+    width: 115px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+
+.select select {
+    width: auto;
+    height: 40px;
+    font-size: 15px;
+    background-color: rgb(225,174,238);
+}
+
+.select img {
+    max-width: 25px;
+}
+
+.result {
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px;
+    font-size: 17px;
+    transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+
+}
+
+button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: rgb(225,174,238);
+}
+
+.select {
+    background-color: rgb(225,174,238);
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+}
